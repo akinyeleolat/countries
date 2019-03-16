@@ -1,0 +1,68 @@
+{
+  "name": "countries",
+  "version": "1.0.0",
+  "description": "CRUD Operations for countries of the world",
+  "main": "../app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel-node": "babel-node --presets=env",
+    "start": "babel-node -- server/app.js",
+    "dev": "nodemon server/app.js --exec babel-node",
+    "lint": "eslint ./ --fix",
+    "build": "babel src -d dist",
+    "postinstall": "npm install babel-cli babel-preset-env babel-register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akinyeleolat/countries.git"
+  },
+  "keywords": [
+    "countries",
+    "code"
+  ],
+  "author": "AKINYELE OLUWATOSIN A",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akinyeleolat/countries/issues"
+  },
+  "homepage": "https://github.com/akinyeleolat/countries#readme",
+  "dependencies": {
+    "@babel/cli": "^7.2.3",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "debug": "^4.1.1",
+    "dotenv": "^6.0.0",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "morgan": "^1.9.1",
+    "natural": "^0.6.2"
+  },
+  "devDependencies": {
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "nodemon": "^1.18.3"
+  },
+  "nodemonConfig": {
+    "name": "nodemon",
+    "homepage": "http://nodemon.io",
+    "...": "... other standard package.json values",
+    "nodemonConfig": {
+      "ignore": [
+        "test/*",
+        "docs/*",
+        "node_modules/**/node_modules"
+      ],
+      "delay": "2500"
+    }
+  }
+}
